@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 100vw;
+  height: 91vh;
+  border: solid black 5px;
+  border-radius: 2vw;
+  top: 1vh;
+}
+
+.title-cont {
+  position: absolute;
+  bottom: 1vh;
+  width: 60vw;
+  border: solid violet 2px;
+  border-radius: 1vw;
+  margin-left: 20vw;
+}
+.title-cont__title {
+  text-align: center;
+  font-size: calc(16px + 0.04 * (100vw - 400px));
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.rock-container {
+  position: absolute;
+  width: 30%;
+  height: 15%;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 5%;
+  background: url(../images/rock.png) center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.wide-screen.rock-container {
+  width: 20%;
+  height: 25%;
+  left: 20%;
+  top: 15%;
+}
+
+.widest-screen.wide-screen.rock-container,
+.widest-screen.wide-screen.scissors-container,
+.widest-screen.wide-screen.paper-container {
+  width: 15%;
+  height: 25%;
+}
+
+.scissors-container {
+  position: absolute;
+  width: 30%;
+  height: 15%;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 25%;
+  background: url(../images/scissors.png) center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.wide-screen.scissors-container {
+  width: 20%;
+  height: 25%;
+  left: 50%;
+  top: 15%;
+}
+
+.paper-container {
+  position: absolute;
+  width: 30%;
+  height: 15%;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 45%;
+  background: url(../images/paper.png) center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.wide-screen.paper-container {
+  width: 20%;
+  height: 25%;
+  left: 80%;
+  top: 15%;
+}
+
+.result-container {
+  position: absolute;
+  width: 100%;
+  height: 55%;
+  left: 0;
+  top: 0;
+}
+
+.player-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 75%;
+  left: 15%;
+  background-color: rgb(0, 234, 255);
+  font-size: 13vw;
+  line-height: 1;
+  text-align: center;
+}
+
+.wide-screen.player-score,
+.wide-screen.comp-score {
+  top: 60%;
+  width: 10%;
+  font-size: 7vw;
+}
+
+.comp-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 75%;
+  right: 15%;
+  background-color: rgb(0, 234, 255);
+  font-size: 10vw;
+  line-height: 1;
+  text-align: center;
+}
