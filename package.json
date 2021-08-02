@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /rock-paper-scissors-parcel/"
+    "build": "parcel build src/index.html --public-url /Rock-paper-scissors-parcel/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -17,8 +19,10 @@
   "bugs": {
     "url": "https://github.com/Zmennn/Rock-paper-scissors-parsel/issues"
   },
-  "homepage": "https://github.com/Zmennn/Rock-paper-scissors-parsel#readme",
+  
+  "homepage": "https://Zmennn.github.io/Rock-paper-scissors-parsel",
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "parcel-bundler": "^1.12.5",
     "sass": "^1.36.0"
   }

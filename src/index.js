@@ -166,7 +166,7 @@ function showResult(result) {
     refs.scissorsEl.classList.add('is-hidden');
     refs.resultContainerEl.classList.remove('is-hidden');
     refs.resultContainerEl.style.backgroundSize = 'cover';
-    console.log(result.message);
+
     switch (result.message) {
         case 'win':
             refs.resultContainerEl.style.background = 'url(./images/win.jpg) center center no-repeat';
