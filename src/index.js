@@ -169,18 +169,27 @@ function showResult(result) {
 
     switch (result.message) {
         case 'win':
-            refs.resultContainerEl.style.background = 'url(./images/win.jpg) center center no-repeat';
-            refs.resultContainerEl.style.backgroundSize = screenSize
+            // refs.resultContainerEl.style.background = ' ';
+            refs.resultContainerEl.style.backgroundSize = screenSize;
+            refs.resultContainerEl.classList.remove("loss");
+            refs.resultContainerEl.classList.remove("draw");
+            refs.resultContainerEl.classList.add("win");
             break;
 
         case 'loss':
-            refs.resultContainerEl.style.background = 'url(./images/loss.png)  center center no-repeat ';
+            // refs.resultContainerEl.style.background = 'url(./images/loss.png)  center center no-repeat ';
             refs.resultContainerEl.style.backgroundSize = screenSize;
+            refs.resultContainerEl.classList.remove("draw");
+            refs.resultContainerEl.classList.remove("win");
+            refs.resultContainerEl.classList.add("loss");
             break;
 
         case 'draw':
-            refs.resultContainerEl.style.background = 'url(./images/draw.png)  center center no-repeat ';
+            // refs.resultContainerEl.style.background = 'url(./images/draw.png)  center center no-repeat ';
             refs.resultContainerEl.style.backgroundSize = screenSize;
+            refs.resultContainerEl.classList.remove("loss");
+            refs.resultContainerEl.classList.remove("win");
+            refs.resultContainerEl.classList.add("draw");
             break;
     };
 

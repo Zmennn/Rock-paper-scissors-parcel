@@ -137,3 +137,15 @@ body {
   line-height: 1;
   text-align: center;
 }
+
+.win {
+  background: url(../images/win.jpg) center center no-repeat;
+}
+
+.loss {
+  background: url(../images/loss.png) center center no-repeat;
+}
+
+.draw {
+  background: url(../images/draw.png) center center no-repeat;
+}
