@@ -1,6 +1,8 @@
 "use strict"
 // камень-ножницы-бумага
 
+
+
 let playScore = 0;
 let compScore = 0;
 let id = 0;
