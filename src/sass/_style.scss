@@ -125,6 +125,16 @@ body {
   font-size: 7vw;
 }
 
+.widest-screen.wide-screen.player-score,
+.widest-screen.wide-screen.comp-score {
+  top: 50%;
+}
+
+.widest2-screen.widest-screen.wide-screen.player-score,
+.widest2-screen.widest-screen.wide-screen.comp-score {
+  top: 30%;
+}
+
 .comp-score {
   display: flex;
   justify-content: center;

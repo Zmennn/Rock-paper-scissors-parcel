@@ -47,7 +47,7 @@ function onResize(entries) {
     };
 
     // Добавление и удаление классов на самый широкий экран
-    if (aspectRatio > 1.4) {
+    if (aspectRatio > 1.8) {
         refs.rockEl.classList.add('widest-screen');
         refs.paperEl.classList.add('widest-screen');
         refs.scissorsEl.classList.add('widest-screen');
@@ -59,6 +59,21 @@ function onResize(entries) {
         refs.scissorsEl.classList.remove('widest-screen');
         refs.playScoreEl.classList.remove('widest-screen');
         refs.compScoreEl.classList.remove('widest-screen');
+    }
+
+    // И для особых извращенцев
+    if (aspectRatio > 2.5) {
+        refs.rockEl.classList.add('widest2-screen');
+        refs.paperEl.classList.add('widest2-screen');
+        refs.scissorsEl.classList.add('widest2-screen');
+        refs.playScoreEl.classList.add('widest2-screen');
+        refs.compScoreEl.classList.add('widest2-screen');
+    } else {
+        refs.rockEl.classList.remove('widest2-screen');
+        refs.paperEl.classList.remove('widest2-screen');
+        refs.scissorsEl.classList.remove('widest2-screen');
+        refs.playScoreEl.classList.remove('widest2-screen');
+        refs.compScoreEl.classList.remove('widest2-screen');
     }
 
 };
